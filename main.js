@@ -2,5 +2,9 @@
 
 
 $(".fa-bars").click(function(){
-  $(".hamburger-menu").toggle('show');
+  $(".hamburger-menu").slideToggle()
+});
+
+$('a.close').on("click", function(){
+    $('.hamburger-menu').slideUp();
 });
